@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>com.company</groupId>
+        <artifactId>apps</artifactId>
+        <version>0.0.1-SNAPSHOT</version>
+    </parent>
+
+    <artifactId>interview</artifactId>
+    <packaging>pom</packaging>
+    <modules>
+        <module>cache-hazelcast</module>
+        <module>cache-lru</module>
+        <module>interviewpreparation</module>
+        <module>java8-stream-api</module>
+        <module>leetcode</module>
+        <module>oops</module>
+        <module>string</module>
+    </modules>
+</project>

@@ -1,0 +1,22 @@
+eureka:
+  client:
+    service-url:
+      defaultZone: 'http://localhost:8761/eureka/'
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+  security:
+    enabled: false
+server:
+  port: 8081
+spring:
+  application:
+    name: springbootappcouponservice
+  datasource:
+    password: Welcome@123
+    url: 'jdbc:mysql://localhost:3306/product-db'
+    username: root
+  kafka:
+    bootstrapServers: 'localhost:9092'

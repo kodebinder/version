@@ -1,0 +1,29 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>com.company</groupId>
+		<artifactId>dailycodebuffer</artifactId>
+		<version>0.0.1-SNAPSHOT</version>
+	</parent>
+	<artifactId>dcb-spring-boot</artifactId>
+	<packaging>pom</packaging>
+	<modules>
+		<module>springbootappbuildpack</module>
+		<module>springbootappdocker</module>
+		<module>springbootappdrooldecisiontable</module>
+		<module>springbootapplambdaexpressionjavaeight</module>
+		<module>springbootappproperties</module>
+		<module>springbootapprabbitmqconsumer</module>
+		<module>springbootapprabbitmqproducer</module>
+		<module>springbootappspringbootscheduler</module>
+		<module>springbootappspringdatajpatutorial</module>
+		<module>springbootappspringwebsocket</module>
+		<module>springbootapptest</module>
+		<module>springbootapptestdemo</module>
+		<module>springbootapptransactional</module>
+		<module>springbootappresilience4jserviceA</module>
+		<module>springbootappresilience4jserviceB</module>
+	</modules>
+</project>

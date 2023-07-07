@@ -1,0 +1,15 @@
+server:
+  port: 8081
+
+# Broker is running on 9092
+spring:
+  kafka:
+    bootstrapServers: localhost:9092
+
+  datasource:
+    url: jdbc:h2:mem:product-db
+    username: sa
+    password: sa
+    driverClassName: org.h2.Driver
+  jpa:
+    spring.jpa.database-platform: org.hibernate.dialect.H2Dialect

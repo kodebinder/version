@@ -1,0 +1,29 @@
+eureka:
+  client:
+    service-url:
+      defaultZone: 'http://localhost:8761/eureka/'
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+server:
+  port: 9095
+spring:
+  application:
+    name: springbootappapigatewayservice
+  cloud:
+    gateway:
+      routes:
+        - id: springbootappcouponservice
+          predicates:
+            - Path=/api/v1/coupons/**
+          uri: 'lb://springbootappcouponservice'
+        - id: springbootappproductservice
+          predicates:
+            - Path=/api/v1/products/**
+          uri: 'lb://springbootappproductservice'
+  main:
+    web-application-type: reactive
+  zipkin:
+    base-url: 'http://localhost:9411'

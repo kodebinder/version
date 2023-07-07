@@ -1,0 +1,17 @@
+eureka:
+  client:
+    service-url:
+      defaultZone: 'http://localhost:8761/eureka/'
+server:
+  port: 8888
+spring:
+  application:
+    name: springbootappcloudconfigserver
+  cloud:
+    config:
+      server:
+        git:
+          uri: 'https://github.com/kodebinder/cloudconfigserver'
+#         uri: file:///${user.home}/Documents/workspace_intellij/cloudconfigserver
+  profiles:
+    active: prod
